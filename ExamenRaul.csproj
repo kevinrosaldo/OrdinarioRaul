@@ -12,7 +12,4 @@
     <None Remove="Interfaces\" />
     <None Remove="Enumeradores\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\" />
-  </ItemGroup>
 </Project>
