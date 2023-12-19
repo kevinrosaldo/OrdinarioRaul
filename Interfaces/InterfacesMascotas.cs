@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ExamenRaul.Interfaces
 {
-    internal interface IMascotas
+    public interface IMascotas
     {
-        interface IMascotas
+        interface IMascota
         {
-            int Id { get; set; }
+            int Id { get; }
             string Nombre { get; set; }
             int Edad { get; }
 

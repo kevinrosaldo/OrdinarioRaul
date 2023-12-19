@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ExamenRaul.Interfaces
 {
-    internal interface IAcaricia 
+    public interface IAcaricia 
     {
         void ResponderAcaricia();
     }
