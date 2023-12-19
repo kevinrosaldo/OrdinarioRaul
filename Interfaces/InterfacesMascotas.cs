@@ -1,8 +1,10 @@
-﻿using System;
+﻿using ExamenRaul.Enumeradores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ExamenRaul.Enumeradores.Temperamentoenum;
 
 namespace ExamenRaul.Interfaces
 {
@@ -10,6 +12,7 @@ namespace ExamenRaul.Interfaces
     {
         interface IMascota
         {
+           Temperamentoenum temperamentoenum { get;  }
             int Id { get; }
             string Nombre { get; set; }
             int Edad { get; }

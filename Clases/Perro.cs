@@ -1,5 +1,8 @@
 ﻿using System;
 using static ExamenRaul.Interfaces.IMascotas;
+using static ExamenRaul.Enumeradores.Temperamentoenum;
+using ExamenRaul.Enumeradores;
+
 namespace ExamenRaul.Clases 
 {
     public class Perro : IMascota
@@ -9,14 +12,16 @@ namespace ExamenRaul.Clases
         private int _edad;
         private string _dueño;
         private int _id;
+        private Temperamentoenum _temperamento;
         int Idlass = 0;
 
-        public Perro(string nombre, int edad, string dueño,int Id)
+        public Perro(string nombre, int edad, string dueño,int Id, Temperamentoenum temperamento)
         {
             _name = nombre;
             _edad = edad;
             _dueño = dueño;
              _id = Id;
+            _temperamento = temperamento;   
             _id = Idlass + 1;
             Idlass++;
             _perros = new List<IMascota>();
@@ -76,6 +81,12 @@ namespace ExamenRaul.Clases
             set { _dueño = value; }
         }
 
+        public Temperamentoenum temperamentoenum
+        { 
+            get { return _temperamento; }
+
+        }
+
         public void CambiarDueño()
         {
             throw new NotImplementedException();
@@ -86,9 +97,9 @@ namespace ExamenRaul.Clases
             Console.WriteLine("gua gua gua (que onda pa)");
         }
 
-        public void Movercola()
+        public void Movercola(IMascota perro)
         {
-            Console.WriteLine($"Perro moviendo las caderas y la colita");
+            Console.WriteLine($"{perro.Nombre}Perro moviendo las caderas y la colita");
         }
         public void Gruñir()
         {
@@ -96,7 +107,7 @@ namespace ExamenRaul.Clases
         }
         public void AgregarPerros(IMascota perro)
         {
-            _perros.Add(new Perro(perro.Nombre,perro.Edad,perro.Dueño,perro.Id));
+            _perros.Add(new Perro(perro.Nombre,perro.Edad,perro.Dueño,perro.Id,perro.temperamentoenum));
         }
     }
 }
