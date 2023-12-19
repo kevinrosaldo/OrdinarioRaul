@@ -1,10 +1,14 @@
 ﻿using System;
-namespace ExamenRaul.Clases
-{
-	public class Capibara
+namespace ExamenRaul.Clases { 
+using ExamenRaul.Interfaces;
+
+
+	public class Capibara : IMascotas
 	{
-		public Capibara()
+		public Capibara() 
 		{
+
+
 		}
 	}
 }
