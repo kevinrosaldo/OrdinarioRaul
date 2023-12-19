@@ -14,7 +14,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Clases\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Enumeradores\" />
   </ItemGroup>
 </Project>
