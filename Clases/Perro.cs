@@ -84,6 +84,7 @@ namespace ExamenRaul.Clases
         public Temperamentoenum temperamentoenum
         { 
             get { return _temperamento; }
+          
 
         }
 
@@ -99,6 +100,7 @@ namespace ExamenRaul.Clases
 
         public void Movercola(IMascota perro)
         {
+           
             Console.WriteLine($"{perro.Nombre}Perro moviendo las caderas y la colita");
         }
         public void Gruñir()
