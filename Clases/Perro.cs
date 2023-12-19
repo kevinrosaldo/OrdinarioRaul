@@ -1,11 +1,11 @@
 ﻿using System;
-namespace ExamenRaul.Clases
-{
-	public class Perro
+namespace ExamenRaul.Clases { 
+using ExamenRaul.Interfaces;
+
+	public class Perro :IMascotas
 	{
 		public Perro()
 		{
-
 
 
 		}

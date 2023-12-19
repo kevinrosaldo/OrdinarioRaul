@@ -1,10 +1,13 @@
 ﻿using System;
-namespace ExamenRaul.Clases
-{
-	public class Gato
+namespace ExamenRaul.Clases { 
+using ExamenRaul.Interfaces;
+
+
+	public class Gato :IMascotas
 	{
 		public Gato()
 		{
+
 		}
 	}
 }
