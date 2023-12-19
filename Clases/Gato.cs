@@ -5,8 +5,10 @@ using static ExamenRaul.Interfaces.IMascotas;
 namespace ExamenRaul.Clases
 {
 
-    public class Gato :IMascota
-	{
+
+
+    public class Gato : IMascota
+    {
         private List<IMascota> _gatos;
         private string _name;
         private int _edad;
@@ -15,7 +17,7 @@ namespace ExamenRaul.Clases
         private Temperamentoenum _temperamento;
         int Idlass = 0;
 
-        public Gato(string nombre, int edad, string dueño, int Id, Temperamentoenum temperamentoenum)
+        public Gato(string nombre, int edad, string dueño, int Id)
         {
             _name = nombre;
             _edad = edad;
@@ -83,11 +85,12 @@ namespace ExamenRaul.Clases
         public Temperamentoenum temperamentoenum
         {
             get { return _temperamento; }
+          
         }
 
         public void CambiarDueño()
         {
-            
+
             throw new NotImplementedException();
         }
 
@@ -106,7 +109,7 @@ namespace ExamenRaul.Clases
         }
         public void AgregarPerros(IMascota gato)
         {
-            _gatos.Add(new Gato(gato.Nombre, gato.Edad, gato.Dueño, gato.Id,gato.temperamentoenum));
+            _gatos.Add(new Perro(gato.Nombre, gato.Edad, gato.Dueño, gato.Id, gato.temperamentoenum));
         }
 
     }
